@@ -1,0 +1,174 @@
+<!-- Boilerplate -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tibo's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+
+    <!-- Navigation Bar -->
+    <nav id="desktop-nav">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!--Mobile Navigation (Extra)-->
+    <nav id="mobile-nav">
+      <div class="logo">Tibo Gobet</div>
+      <div class="mobile-menu-container">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="mobile-menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <section id="profile">
+      <div class="profile-picture-box">
+        <img src="./assets/profile-pic.png" alt="Tibo Gobet profile picture" />
+      </div>
+      <div class="profile-text-box">
+        <p class="greeting-text">Hello, I'm</p>
+        <h1 class="main-heading">Tibo Gobet</h1>
+        <p class="subtitle-text">IT Support Specialist | Cybersecurity Graduate Student</p>
+        <div class="button-container">
+          <a
+            href="./assets/resume.pdf"
+            class="btn button-outline"
+            id="resumeBtn"
+            >Resume</a
+          >
+          <a href="#contact" class="btn button-solid" id="contactBtn"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section w Experience, Skills and Education as subsections -->
+    <section id="about">
+      <h1 class="main-heading">About Me</h1>
+
+      <div class="about-text-box">
+        <p>
+          I am a cybersecurity graduate student athlete at Florida International University
+          with hands-on experience in IT support, network troubleshooting, and system
+          administration. I have worked as an IT Help Desk Analyst, supporting users across
+          hardware, software, and network environments.  I am currently focused on growing my skills in IT support, systems, and
+          cybersecurity while contributing to a fast-paced and team-oriented environment.
+        </p>
+      </div>
+
+      <div class="about-content-wrapper">
+        <div class="experience-box">
+          <div class="box-title">
+            <img src="./assets/experience.png" alt="Icon" class="small-icon" />
+            <h3>Experience</h3>
+          </div>
+          <ul class="experience-list">
+            <li>
+              <h4>IT Help Desk Analyst — Université Côte d'Azur (France)</h4>
+              Served as first point of contact for IT support across hardware, software,
+              and network issues. Managed user accounts and permissions using Active Directory.
+              Troubleshot networking issues (DNS, DHCP, TCP/IP, Wi-Fi). Monitored systems and
+              analyzed logs using Splunk, Sysmon, and Wireshark.
+            </li>
+            <li>
+              <h4>SOC Lab — RDP Attack Detection</h4>
+              Built a SOC monitoring lab to detect RDP brute-force attacks on Windows systems.
+              Configured Sysmon for endpoint logging and forwarded logs to Splunk SIEM.
+            </li>
+            <li>
+              <h4>AWS Cloud Security Engineer (Student Project)</h4>
+              Configured and monitored cloud-based systems. Managed IAM access controls and
+              implemented logging and monitoring using CloudWatch.
+            </li>
+          </ul>
+        </div>
+
+        <div class="details-wrapper">
+          <div class="info-card">
+            <img
+              src="./assets/skills.png"
+              alt="Skills Icon"
+              class="small-icon"
+            />
+            <h3>Skills</h3>
+            <p>
+              Active Directory, Wireshark, Splunk, Sysmon, VirtualBox, VMware,
+              GNS3, TCP/IP, DNS, DHCP, Windows, Linux (Ubuntu), CompTIA A+, Security+
+            </p>
+          </div>
+
+          <div class="info-card">
+            <img
+              src="./assets/education.png"
+              alt="Education Icon"
+              class="small-icon"
+            />
+            <h3>Education</h3>
+            <p>MS in Cybersecurity — FIU<br />BA in Business Administration<br />AS in Business Management</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h1 class="main-heading">Projects</h1>
+      
+      <div class="projects-wrapper" id="projects-container">
+        <p style="text-align:center;">Loading projects from database...</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h1 class="main-heading">Contact Me</h1>
+      <div class="contact-card-wrapper">
+        <div class="contact-item">
+          <img
+            src="./assets/email.png"
+            alt="Email"
+            class="small-icon email-icon"
+          />
+          <p><a href="mailto:tibogobet13@outlook.com">tibogobet13@outlook.com</a></p>
+        </div>
+
+        <div class="contact-item">
+          <img src="./assets/linkedin.png" alt="LinkedIn" class="small-icon" />
+          <p><a href="https://www.linkedin.com/in/tibo-gobet-b9849023a/" target="_blank">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <p>Copyright &#169; 2026 Tibo Gobet. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+[
+  {
+    "title": "SOC Lab — RDP Attack Detection",
+    "image": "./assets/project-1.png",
+    "description": "Simulated full attack lifecycle in a SOC homelab: RDP brute-force, privilege persistence, PowerShell abuse, containment, and custom Splunk detection engineering using Sysmon telemetry.",
+    "link": "https://github.com/samboujunior/SOC-Lab-RDP-Attack-Detection-with-Sysmon-and-Splunk"
+  },
+  {
+    "title": "TCP/IP Attack Lab",
+    "image": "./assets/project-2.png",
+    "description": "Hands-on TCP/IP security lab demonstrating SYN flooding, TCP reset attacks, session hijacking, and reverse shell exploitation using Python and Scapy.",
+    "link": "https://github.com/samboujunior/TCP-IP-attack-lab"
+  },
+  {
+    "title": "VPay",
+    "image": "./assets/project-3.png",
+    "description": "A demo that shows a voice-driven payment flow. The browser captures speech and simulates a payment response.",
+    "link": "https://github.com/zmaraj/Vpay"
+  }
+]
